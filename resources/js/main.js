@@ -53,7 +53,7 @@ function onClick(element) {
 
 // Change style of navbar on scroll
 window.onscroll = function () {
-    myFunction()
+    myFunction();
 };
 
 function myFunction() {
@@ -73,4 +73,23 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+
+/*
+
+    Send Mail Function
+
+    To-do: Add firebase functionality to automate mail sending.
+
+*/
+
+function sendMail() {
+    oForm = document.forms.ContactForm;
+    formName = oForm.elements.inquiry_name.value;
+    formSubj = oForm.elements.inquiry_subject.value;
+    formBody = oForm.elements.inquiry_body.value;
+    console.log(formName);
+    out = 'mailto:jazzclububc@gmail.com?subject=' + formName + ': ' + formSubj;
+    out += '&body=' + formBody;
+    window.open(out);
 }
