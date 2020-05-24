@@ -17,20 +17,23 @@ html {
 
 /* General CSS */
 
-.no-margin
-{
+.no-margin {
     margin: 0px;
 }
 
-.main-section
-{
+.main-section {
     padding: 60px 150px 60px 150px;
     background-color: rgba(16, 16, 16, 0.8);
 }
 
-.main-section a, pre
-{
+.main-section a,
+pre {
     color: yellow;
+}
+
+.footer_icon {
+    text-decoration: none;
+    color: white;
 }
 
 /**
@@ -79,92 +82,6 @@ html {
     color: yellow;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
 /**
 
     About Section CSS
@@ -188,8 +105,6 @@ html {
 }
 
 /* Execs Section */
-
-/* == End About CSS == */
 
 @-webkit-keyframes fade {
     from {
@@ -241,6 +156,56 @@ html {
     min-height: 200px;
 }
 
+/* == End About CSS == */
+
+/**
+
+    Gallery Page CSS
+
+**/
+
+.album_gallery {
+    margin: 60px 60px 60px 60px;
+}
+
+.album_desc {
+    padding: 15px 15px 15px 15px;
+}
+
+.gallery_carousel
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.gallery_thumbnail {
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.gallery_thumbnail:hover {
+    filter: none;
+    /* IE6-9 */
+    -webkit-filter: grayscale(0);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+
+}
+
 /**
 
     Contact Us Page CSS
@@ -248,32 +213,42 @@ html {
 **/
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
     background-color: yellow;
     color: #404040;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
     background-color: white;
     color: #404040;
-  }
+}
 
 /**
 
