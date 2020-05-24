@@ -2,6 +2,16 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-May-23
+- Added bootstrap to gallery page
+- Added css to overwrite bootstrap link colour
+- Created thumbnails for albums and formatted
+- Moved index slideshow css into separate file (slideshow.css)
+- Moved lightbox slides css into separate file (lightbox.css)
+- Made hard-coded idea version of lightbox, still need to change to dynamic
+- ToDo:
+    * Dynamic detection of album selected
+    * Dynamic photo selection
 ### 2020-May-19
 - Set up "direct" contact on the contact page
 - Added execs section to about page

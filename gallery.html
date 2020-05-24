@@ -6,7 +6,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="resources/css/main.css">
+<link rel="stylesheet" href="resources/css/lightbox.css">
 
 <body>
 
@@ -46,77 +49,138 @@
     </div>
 
     <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">PHOTOS</h3>
-        <p class="w3-center"><em>Various Pictures from the Events and Jam Sessions!<br> Click on the images to
-                make them bigger</em></p><br>
-
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="resources/images/bossa_de_janeiro_2.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Bossa De Janeiro 2018">
+    <div class="container-fluid" id="portfolio">
+        <h3 class="w3-center w3-padding-64">PHOTOS</h3>
+        <p class="w3-center">
+            <em>Various Pictures from the Events and Jam Sessions!<br>
+                Click on the albums to look through them!
+            </em>
+        </p>
+        <br>
+        <div class="album_gallery">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="text-center">
+                        Cozy Christmas
+                    </h3>
+                    <p class="album_desc">
+                        Photos from the comfiest night of the year: Cozy Christmas with UBC Jazz Club, hosted on Nov.
+                        29th, 2019.
+                        A Peanuts/Vince Gauraldi pajama-casual social with various group games, competitions and most
+                        importantly, delicious treats.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-center">
+                        Imagine Day 2019
+                    </h3>
+                    <p class="album_desc">
+                        A snapshot of our club booth during Imagine Day, a campus-wide initiative held on the first day
+                        of class in September, allowing students to be introduced to the many clubs on campus.
+                        We’ll be active on our socials so you’ll know where approximately you can find us -- although,
+                        your best bet is to follow the sound of jazz music. It’ll bring you home.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-center">
+                        Weekly Jam Sessions
+                    </h3>
+                    <p class="album_desc">
+                        A peek into our weekly jams. Pictured: Execs, members and instruments galore.
+                        Not pictured: the occasional chaos, the intermittent * squeaks *, the hubbub/flow of
+                        conversation and good company.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img id="cozy_christmas" class="img-responsive gallery_thumbnail"
+                        src="resources/images/album/cozy_christmas/cozy_christmas_1.jpg"
+                        onclick="openModal();currentSlide(1)" />
+                </div>
+                <div class="col-md-4">
+                    <img id="imagine_day" class="img-responsive gallery_thumbnail"
+                        src="resources/images/album/imagine_day/imagine_day_1.jpg"
+                        onclick="openModal();currentSlide(1)" />
+                </div>
+                <div class="col-md-4">
+                    <img id="weekly_jams" class="img-responsive gallery_thumbnail"
+                        src="resources/images/album/weekly_jams/weekly_1.jpg"
+                        onclick="openModal();currentSlide(1)" />
+                </div>
             </div>
 
-            <div class="w3-col m3">
-                <img src="resources/images/gallery_1.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Surprise">
-            </div>
+            <!-- Modal for albums on click-->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
 
-            <div class="w3-col m3">
-                <img src="resources/images/gallery_2.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Singing Time">
-            </div>
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 17</div>
+                        <img src="resources/images/album/cozy_christmas/cozy_christmas_1.jpg" style="height:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 17</div>
+                        <img src="resources/images/album/cozy_christmas/cozy_christmas_2.jpg" style="height:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 17</div>
+                        <img src="resources/images/album/cozy_christmas/cozy_christmas_3.jpg" style="height:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 17</div>
+                        <img src="resources/images/album/cozy_christmas/cozy_christmas_4.jpg" style="height:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 17</div>
+                        <img src="resources/images/album/cozy_christmas/cozy_christmas_5.jpg" style="height:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 17</div>
+                        <img src="resources/images/album/cozy_christmas/cozy_christmas_6.jpg" style="height:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 17</div>
+                        <img src="resources/images/album/cozy_christmas/cozy_christmas_7.jpg" style="height:100%">
+                    </div>
 
-            <div class="w3-col m3">
-                <img src="resources/images/gallery_3.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="T-Shirts!">
-            </div>
-        </div>
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="resources/images/gallery_5.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Casual Jam">
-            </div>
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
 
-            <div class="w3-col m3">
-                <img src="resources/images/main2.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Bossa De Janeiro 2018">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="resources/images/main.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Casual Jam 2">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="resources/images/gallery_4.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Warm Up">
-            </div>
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" type="button"
-                onclick="location.href='gallery.html'">LOAD MORE</button>
-        </div>
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-                    class="fa fa-remove"></i></span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption" class="w3-opacity w3-large"></p>
+                    <!-- Thumbnail image controls -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="thumb_control" src="resources/images/album/cozy_christmas/cozy_christmas_1.jpg"
+                                onclick="currentSlide(1)" alt="Hello There!">
+                        </div>
+                        <div class="column">
+                            <img class="thumb_control" src="resources/images/album/cozy_christmas/cozy_christmas_2.jpg"
+                                onclick="currentSlide(2)" alt="Guess">
+                        </div>
+                        <div class="column">
+                            <img class="thumb_control" src="resources/images/album/cozy_christmas/cozy_christmas_3.jpg"
+                                onclick="currentSlide(3)" alt="Big Laugh">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <footer class="w3-center w3-black w3-padding-64">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
-            <a href="https://www.facebook.com/ubcjazzclub/" style="text-decoration: none;">
+            <a href="https://www.facebook.com/ubcjazzclub/" class="footer_icon">
                 <i class="fa fa-facebook-official w3-hover-opacity"></i>
             </a>
-            <a href="https://www.instagram.com/ubcjazzclub/?hl=en" style="text-decoration: none;">
+            <a href="https://www.instagram.com/ubcjazzclub/?hl=en" class="footer_icon">
                 <i class="fa fa-instagram w3-hover-opacity"></i>
             </a>
         </div>
