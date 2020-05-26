@@ -2,6 +2,11 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-May-25
+- Added exec photos
+- Added placeholder descriptions
+- Added flipcards with description on the back
+- Made the images responsive according to screen width
 ### 2020-May-23
 - Added bootstrap to gallery page
 - Added css to overwrite bootstrap link colour
