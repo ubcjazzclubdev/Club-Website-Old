@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="resources/css/main.css">
+<link rel="stylesheet/less" type="text/css" href="./resources/css/timeline.less" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <body>
 
@@ -41,15 +44,49 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span id="logo_text" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">JAM SESSION
-                PAGE</span>
+            <span id="logo_text" class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+                EVENTS
+            </span>
         </div>
     </div>
 
-    <div class="container">
-        <div class="w3-content w3-container w3-padding-64" id="intro">
-            <h3 class="w3-center">Under Construction</h3>
-            <p class="w3-center"><em>Jam Session Page Stuff</em></p>
+    <div class="container-fluid">
+        <div id="timeline-content">
+            <h1>Timeline</h1>
+
+            <ul class="timeline">
+                <li class="event" data-date="65Million B.C.">
+                    <h3>Dinosaurs Roamed the Earth</h3>
+                    <p>RAWWWWWWRRR 🐢🦂</p>
+                </li>
+                <li class="event" data-date="2005">
+                    <h3>Creative Component Launched</h3>
+                    <p>"We can be all things to all people!" 📣</p>
+                </li>
+                <li class="event" id="date" data-date="2009">
+                    <h3>Squareflair was Born</h3>
+                    <p></p>
+                    <p>"We can be all things to Squarespace users!" 📣</p>
+                </li>
+
+                <li class="event" data-date="November 15, 2018">
+
+                    <h3>Squareflair Today</h3>
+
+                    <p>"We design and build from scratch!" 📣
+                        <p />
+                        <p>When we say <em><strong>100% custom</strong></em> we mean it— and we build all sites on the
+                            Squarespace Developer platform.
+                            <p />
+                            <p>Did you know that all of our pixels are hand-forged from the rarest of subpixels grown
+                                and harvested in the <em>Nerd Forest</em>? <br>🤜💥🤛</p>
+
+                            <p><strong>Our success can be measured by lives and brands enhanced by 9+ years of 100%
+                                    Squarespace-focused service!</strong></p>
+
+                            <p><a href="https://www.squareflair.com">squareflair.com</a></p>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -65,7 +102,7 @@
             </a>
         </div>
     </footer>
-    <script src="resources/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js" ></script>
 </body>
 
 </html>
