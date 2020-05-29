@@ -2,6 +2,10 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-May-28
+- Added favicon to all pages
+- Changed "FAQ" page to "GET INVOLVED"
+- Changed "JAM SESSION" page to "EVENTS"
 ### 2020-May-25
 - Added exec photos
 - Added placeholder descriptions
