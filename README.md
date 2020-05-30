@@ -2,6 +2,8 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-May-29
+- Updated Exec Descriptions and removed flip cards
 ### 2020-May-28
 - Added favicon to all pages
 - Changed "FAQ" page to "GET INVOLVED"
