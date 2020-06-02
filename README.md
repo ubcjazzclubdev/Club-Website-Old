@@ -2,6 +2,10 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-Jun-01
+- Added a sample timeline on the events page
+- Fixed bottom icon styles
+- Added code to timeline in order to override _reboot.scss
 ### 2020-May-31
 - Added Dylan to exec section
 ### 2020-May-29

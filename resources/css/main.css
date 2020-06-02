@@ -46,6 +46,11 @@ pre {
     color: white;
 }
 
+.footer_icon:hover {
+    text-decoration: none;
+    color: var(--primary-colour);
+}
+
 /**
 
     Logo and Navbar CSS
