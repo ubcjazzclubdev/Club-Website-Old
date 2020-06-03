@@ -62,8 +62,8 @@
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.modal_prev,
+.modal_next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -80,14 +80,14 @@
 }
 
 /* Position the "next button" to the right */
-.next {
+.modal_next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.modal_prev:hover,
+.modal_next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 

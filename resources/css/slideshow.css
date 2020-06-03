@@ -6,8 +6,14 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.slide_show_Slides {
     display: none;
+
+    /* fading animation (Put here because bootstrap likes to override my damn css)*/
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 /* Next & previous buttons */
@@ -74,12 +80,4 @@
 .active,
 .dot:hover {
     background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
 }

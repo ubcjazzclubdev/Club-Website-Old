@@ -2,6 +2,14 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-Jun-02
+- Added a featured photos section to the gallery page
+- Split the main.js code into two classes, one for slideshow, one for modal
+- Included slideshow.css in gallery.html
+- Changed slideshow slides variable name from mySlides to slide_show_Slides
+- Included fading into slide_show_Slides class style to prevent bootstrap from overriding.
+- Cheesed modal errors on index.html by rendering slideshow first.
+    * Need to fix
 ### 2020-Jun-01
 - Added a sample timeline on the events page
 - Fixed bottom icon styles

@@ -233,12 +233,30 @@ pre {
 }
 
 .gallery_thumbnail:hover {
+    cursor: pointer;
     filter: none;
     /* IE6-9 */
     -webkit-filter: grayscale(0);
     /* Google Chrome, Safari 6+ & Opera 15+ */
 
 }
+
+#gallery_featured
+{
+    padding: 64px;
+    background-color: #222222;
+}
+
+.gallery_featured_text
+{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+    color: var(--primary-colour);
+}
+
+/* == End Gallery CSS == */
 
 /**
 

@@ -4,37 +4,96 @@
 
 */
 
-var slideIndex = 1;
-showSlides(slideIndex);
+class Slideshow {
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+    constructor() {
+        this.slideIndex = 1;
+    }
+
+    plusSlides(n) {
+        this.showSlides(this.slideIndex += n);
+    }
+
+    currentSlide(n) {
+        this.showSlides(this.slideIndex = n);
+    }
+
+    showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide_show_Slides");
+        var dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {
+            this.slideIndex = 1;
+        }
+        if (n < 1) {
+            this.slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[this.slideIndex - 1].style.display = "block";
+        dots[this.slideIndex - 1].className += " active";
+    }
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+/*
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-        slideIndex = 1
+    Modal Album Gallery
+
+*/
+
+class ModalSlideShow {
+
+    constructor()
+    {
+        this.slideIndex = 1;
     }
-    if (n < 1) {
-        slideIndex = slides.length
+
+    // Open the Modal
+    openModal() {
+        document.getElementById("myModal").style.display = "block";
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+
+    // Close the Modal
+    closeModal() {
+        document.getElementById("myModal").style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+
+    // Next/previous controls
+    plusSlides(n) {
+        this.showSlides(this.slideIndex += n);
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+
+    // Thumbnail image controls
+    currentSlide(n) {
+        this.showSlides(this.slideIndex = n);
+    }
+
+    showSlides(n) {
+        var i;
+        var album = document.getElementsByClassName("gallery_thumbnail");
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+
+        if (n > slides.length) {
+            this.slideIndex = 1;
+        }
+        if (n < 1) {
+            this.slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[this.slideIndex - 1].style.display = "block";
+    }
 }
 
 /*
@@ -51,20 +110,6 @@ function onClick(element) {
     captionText.innerHTML = element.alt;
 }
 
-// Change style of navbar on scroll
-window.onscroll = function () {
-    myFunction();
-};
-
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
@@ -73,60 +118,6 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
-}
-
-/*
-
-    Modal Album Gallery
-
-*/
-
-// Open the Modal
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var num_text = document.getElementsByClassName("numbertext")[0];
-    var album = document.getElementsByClassName("gallery_thumbnail");
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
 /*
@@ -147,3 +138,11 @@ function sendMail() {
     out += '&body=' + formBody;
     window.open(out);
 }
+
+// Render the slideshow and modal
+var sldshow = new Slideshow();
+var modalShow = new ModalSlideShow();
+
+// Render Slideshow first
+sldshow.showSlides();
+modalShow.showSlides();
