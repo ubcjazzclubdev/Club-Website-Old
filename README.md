@@ -2,10 +2,6 @@
 Website for the UBC Jazz Club
 
 # Changelog
-### 2020-Jun-09
-- Added shirt photo to resources images
-- Added merch information to involvement page
-- Added shirt photo to involvement page
 ### 2020-Jun-08
 - Added three separate photos in featured instead of a slideshow
 - Added flagship events to top of events page
