@@ -97,6 +97,8 @@ pre {
     color: yellow;
 }
 
+/* == End Intro Section CSS == */
+
 /**
 
     About Section CSS
@@ -119,7 +121,7 @@ pre {
     text-align: right;
 }
 
-/* Execs Section */
+/** Execs Section **/
 
 @-webkit-keyframes fade {
     from {
@@ -141,11 +143,7 @@ pre {
     }
 }
 
-/**
-
-    2nd Container CSS
-
-**/
+/** 2nd Container CSS **/
 
 /* Second image */
 .bgimg-2 {
@@ -160,11 +158,7 @@ pre {
     padding: 10px;
 }
 
-/**
-
-    Exec Team Separator CSS
-
-**/
+/** Exec Team Separator CSS **/
 
 .exec-separator {
     background-image: url("../images/main2.jpg");
@@ -300,6 +294,54 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: white;
     color: #404040;
+}
+
+/*
+
+    Events Page CSS
+
+*/
+
+.events__box {
+    padding: 60px;
+    background-color: var(--tertiary-colour);
+}
+
+.events__feature {
+    padding: 40px;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    border-radius: 1rem;
+    text-align: center;
+    height: 100%;
+}
+
+/* On Smaller Screens */
+@media only screen and (max-device-width: 1600px)
+{
+    .events__feature {
+        margin-bottom: 1rem;
+        height: unset;
+    }   
+}
+
+#events__title {
+    text-align: center;
+    color: var(--primary-colour);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+}
+
+.events__feature > img {
+    margin: 0;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.events__feature > p {
+    padding-top: 2rem;
+    margin: 0;
 }
 
 /**
