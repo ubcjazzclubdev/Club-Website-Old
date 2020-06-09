@@ -2,6 +2,8 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-Jun-08
+- Added three separate photos in featured instead of a slideshow
 ### 2020-Jun-07
 - Changed timeline to be reverse order (Most Recent First)
 - Added timeline photos
