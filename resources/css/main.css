@@ -33,11 +33,10 @@ html {
 
 .main-section {
     padding: 60px 150px 60px 150px;
-    background-color: rgba(16, 16, 16, 0.8);
+    background-color: var(--secondary-colour);
 }
 
-.main-section a,
-pre {
+.main-section a {
     color: yellow;
 }
 
@@ -189,6 +188,23 @@ pre {
 
 /**
 
+    Involvement Page CSS
+
+**/
+
+#flowchart {
+    width: 80%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+/* == End Involvement == */
+
+/**
+
     Gallery Page CSS
 
 **/
@@ -258,31 +274,56 @@ pre {
 
 **/
 
+/* Overall contact-form styling */
+.contact-form {
+    width: 100%;
+    padding: 20pt;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+}
+
+.contact-form a {
+    color: var(--primary-colour);
+}
+
+.contact-left {
+    padding-left: calc(100vw * 0.2);
+}
+
+.contact-right {
+    padding-right: calc(100vw * 0.2);
+}
+
+@media (max-width: 950px) {
+    .contact-left {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .contact-right {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
 textarea {
     width: 100%;
-    /* Full width */
     padding: 12px;
-    /* Some padding */
     border: 1px solid #ccc;
-    /* Gray border */
     border-radius: 4px;
-    /* Rounded borders */
     box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
     margin-top: 6px;
-    /* Add a top margin */
     margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: yellow;
+    background-color: var(--primary-colour);
     color: #404040;
     padding: 12px 20px;
     border: none;
@@ -290,7 +331,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* When moving the mouse over the submit button, change to white colour scheme */
 input[type=submit]:hover {
     background-color: white;
     color: #404040;
@@ -343,6 +384,8 @@ input[type=submit]:hover {
     padding-top: 2rem;
     margin: 0;
 }
+
+/* == End Events Page CSS == */
 
 /**
 

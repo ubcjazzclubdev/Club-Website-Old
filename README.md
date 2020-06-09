@@ -6,6 +6,11 @@ Website for the UBC Jazz Club
 - Added three separate photos in featured instead of a slideshow
 - Added flagship events to top of events page
 - Added events page section to main.css
+- Added involvement page section to main.css
+- Added flowchart to involvement page
+- Fixed involvement page title
+- Fixed mobile navbar links
+- Fixed contact page mobile resizing issues
 ### 2020-Jun-07
 - Changed timeline to be reverse order (Most Recent First)
 - Added timeline photos
