@@ -105,8 +105,8 @@ html {
 */
 
 #testimonials-sec {
-    color: yellow;
-    background-color: #404040;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
 }
 
 .quote {
@@ -120,7 +120,15 @@ html {
     text-align: right;
 }
 
-/** Execs Section **/
+.awards-container {
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+    padding: 60px;
+}
+
+.award-img {
+    text-align: right;
+}
 
 @-webkit-keyframes fade {
     from {
@@ -156,6 +164,14 @@ html {
     letter-spacing: 10px;
     padding: 10px;
 }
+
+/* == End About CSS == */
+
+/*
+
+    The Team Page
+
+*/
 
 /** Exec Team Separator CSS **/
 
@@ -208,7 +224,7 @@ html {
     }
 }
 
-/* == End About CSS == */
+/* == End Exec Team Page == */
 
 /**
 
