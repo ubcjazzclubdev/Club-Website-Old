@@ -10,6 +10,7 @@ Website for the UBC Jazz Club
 - Added parallax divider for flagship events
 - Added awards section to about us
 - Changed the colours of some of the classes and ids to use primary and secondary colour
+- Added the logic for the featured gallery -ish
 ### 2020-Jun-09
 - Added shirt photo to resources images
 - Added merch information to involvement page
