@@ -2,6 +2,10 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-Jun-16
+- Moved execs to another page
+- Updated navbar and mobile navbar
+- Added resizing of exec descriptions in main.css
 ### 2020-Jun-09
 - Added shirt photo to resources images
 - Added merch information to involvement page

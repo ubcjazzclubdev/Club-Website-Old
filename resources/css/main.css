@@ -166,6 +166,7 @@ html {
 
 .exec_container {
     padding: 100px 100px 100px 100px;
+    transition: 0.3s;
 }
 
 .exec_row {
@@ -182,6 +183,29 @@ html {
 .exec_desc h2, h3, p
 {
     padding-top: 10px;
+}
+
+@media (max-width: 1620px)
+{
+
+    .exec_container {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 1520px)
+{
+    .exec_desc h2 {
+        font-size: calc(2rem * 0.8);
+    }
+
+    .exec_desc h3 {
+        font-size: calc(1.75rem * 0.8);
+    }
+
+    .exec_desc p {
+        font-size: calc(1rem * 0.8);
+    }
 }
 
 /* == End About CSS == */
