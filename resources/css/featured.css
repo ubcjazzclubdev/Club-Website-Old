@@ -1,0 +1,42 @@
+#gallery_featured
+{
+    padding: 64px;
+    background-color: #222222;
+    position: relative;
+    height: calc(100vw * 0.24);
+}
+
+#gallery_featured > div { 
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    right: 4rem;
+    height: calc(100vw * 0.2);
+}
+
+#gallery_featured img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+}
+
+.gallery_featured_text
+{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+    color: var(--primary-colour);
+}
+
+.featured_title {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+}

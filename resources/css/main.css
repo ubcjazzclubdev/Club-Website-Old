@@ -105,8 +105,8 @@ html {
 */
 
 #testimonials-sec {
-    color: yellow;
-    background-color: #404040;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
 }
 
 .quote {
@@ -120,7 +120,15 @@ html {
     text-align: right;
 }
 
-/** Execs Section **/
+.awards-container {
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+    padding: 60px;
+}
+
+.award-img {
+    text-align: right;
+}
 
 @-webkit-keyframes fade {
     from {
@@ -151,11 +159,19 @@ html {
 }
 
 #logo2_text {
-    color: yellow;
-    background-color: rgba(16, 16, 16, 1);
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
     letter-spacing: 10px;
     padding: 10px;
 }
+
+/* == End About CSS == */
+
+/*
+
+    The Team Page
+
+*/
 
 /** Exec Team Separator CSS **/
 
@@ -166,6 +182,7 @@ html {
 
 .exec_container {
     padding: 100px 100px 100px 100px;
+    transition: 0.3s;
 }
 
 .exec_row {
@@ -184,7 +201,30 @@ html {
     padding-top: 10px;
 }
 
-/* == End About CSS == */
+@media (max-width: 1620px)
+{
+
+    .exec_container {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 1520px)
+{
+    .exec_desc h2 {
+        font-size: calc(2rem * 0.8);
+    }
+
+    .exec_desc h3 {
+        font-size: calc(1.75rem * 0.8);
+    }
+
+    .exec_desc p {
+        font-size: calc(1rem * 0.8);
+    }
+}
+
+/* == End Exec Team Page == */
 
 /**
 
@@ -249,21 +289,6 @@ html {
     -webkit-filter: grayscale(0);
     /* Google Chrome, Safari 6+ & Opera 15+ */
 
-}
-
-#gallery_featured
-{
-    padding: 64px;
-    background-color: #222222;
-}
-
-.gallery_featured_text
-{
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 60px;
-    color: var(--primary-colour);
 }
 
 /* == End Gallery CSS == */
