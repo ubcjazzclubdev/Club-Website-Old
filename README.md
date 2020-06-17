@@ -6,6 +6,8 @@ Website for the UBC Jazz Club
 - Moved execs to another page
 - Updated navbar and mobile navbar
 - Added resizing of exec descriptions in main.css
+- Changed first title on events page to "Regular Events"
+- Added parallax divider for flagship events
 ### 2020-Jun-09
 - Added shirt photo to resources images
 - Added merch information to involvement page
