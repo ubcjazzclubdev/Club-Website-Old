@@ -57,8 +57,9 @@ html {
 **/
 
 #logo_text {
-    color: yellow;
-    background-color: #101010;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+    letter-spacing: 0;
 }
 
 #mainNavBar {
@@ -162,7 +163,7 @@ html {
     color: var(--primary-colour);
     background-color: var(--secondary-colour);
     letter-spacing: 10px;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
 }
 
 /* == End About CSS == */
@@ -234,11 +235,44 @@ html {
 
 #flowchart {
     width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#flowchart:focus {
+    outline: unset;
+}
+
+#shirt {
+    width: 80%;
     margin-top: 10rem;
     margin-bottom: 10rem;
     margin-right: auto;
     margin-left: auto;
     display: block;
+}
+
+#merch:focus {
+    outline: unset;
+}
+
+.menu_involvement {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.menu_involvement a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu_involvement a:hover{
+    color: var(--primary-colour);
 }
 
 /* == End Involvement == */
