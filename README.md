@@ -2,6 +2,16 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-Jun-27
+- Removed a colon on events page in cozy christmas entry
+- Added quarantunes entry on events page
+- Changed from "to be announced" to "upcoming"
+- Overhauled main title to use no font-spacing
+    * maybe find a way around text-spacing for last character
+- Section titles have margin at the end removed to compensate font-spacing
+- Added scroll menu to involvement.html
+- Added smooth scrolling code to main.js
+    * need jquery import on page to work
 ### 2020-Jun-16
 - Moved execs to another page
 - Updated navbar and mobile navbar
