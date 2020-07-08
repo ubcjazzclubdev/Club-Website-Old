@@ -267,7 +267,7 @@ html {
 }
 
 .menu_involvement a {
-    text-decoration: none;
+    text-decoration: underline;
     transition: 0.3s;
 }
 
@@ -421,7 +421,6 @@ input[type=submit]:hover {
 {
     .events__feature {
         margin-bottom: 1rem;
-        height: unset;
     }   
 }
 
