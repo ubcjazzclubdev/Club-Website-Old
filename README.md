@@ -2,6 +2,10 @@
 Website for the UBC Jazz Club
 
 # Changelog
+### 2020-Jul-7
+- Changed quarantunez photo and desc on events page.
+- Fixed height issue for regular events on smaller screens.
+- Added underline to menu on involvement page.
 ### 2020-Jun-27
 - Removed a colon on events page in cozy christmas entry
 - Added quarantunes entry on events page
